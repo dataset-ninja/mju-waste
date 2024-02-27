@@ -14,7 +14,7 @@ from dataset_tools.templates import (
 # * Before uploading to instance #
 ##################################
 PROJECT_NAME: str = "MJU-Waste"
-PROJECT_NAME_FULL: str = "MJU-Waste Dataset"
+PROJECT_NAME_FULL: str = "MJU-Waste Dataset v1.0"
 HIDE_DATASET = True  # set False when 100% sure about repo quality
 
 ##################################
@@ -23,8 +23,11 @@ HIDE_DATASET = True  # set False when 100% sure about repo quality
 LICENSE: License = License.MIT(
     source_url="https://github.com/realwecan/mju-waste/blob/master/LICENSE"
 )
-APPLICATIONS: List[Union[Industry, Domain, Research]] = [Industry.WasteRecycling()]
-CATEGORY: Category = Category.Environmental()
+APPLICATIONS: List[Union[Industry, Domain, Research]] = [
+    Industry.WasteRecycling(),
+    Industry.Robotics(),
+]
+CATEGORY: Category = Category.Environmental(extra=Category.Robotics())
 
 CV_TASKS: List[CVTask] = [
     CVTask.InstanceSegmentation(),
@@ -87,7 +90,9 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
 ]
 
 # Set '__PRETEXT__' or '__POSTTEXT__' as a key with string value to add custom text. e.g. SLYTAGSPLIT = {'__POSTTEXT__':'some text}
-SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = None
+SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
+    "__POSTTEXT__": "Additionally, images are grouped by ***im_id***",
+}
 TAGS: Optional[List[str]] = None
 
 

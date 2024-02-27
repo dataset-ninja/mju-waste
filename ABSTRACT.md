@@ -1,6 +1,6 @@
-The authors collected and annotated a new **MJU-Waste Dataset** for waste object segmentation. It is the largest public benchmark available for waste object segmentation, with 1485 images for training, 248 for validation and 742 for testing. For each color image, the authors provide the co-registered depth image captured using an RGBD camera. The authors manually labeled each of the images. 
+The authors collected and annotated a new **MJU-Waste Dataset v1.0** for waste object segmentation. It is the largest public benchmark available for waste object segmentation, with 1485 images for training, 248 for validation and 742 for testing. For each color image, the authors provide the co-registered depth image captured using an RGBD camera. The authors manually labeled each of the images. 
 
-Note, similar **MJU-Waste Dataset** dataset is also available on the [DatasetNinja.com](https://datasetninja.com/):
+Note, similar **MJU-Waste Dataset v1.0** dataset is also available on the [DatasetNinja.com](https://datasetninja.com/):
 
 - [TACO](https://datasetninja.com/taco)
 
@@ -10,7 +10,7 @@ Waste objects are ubiquitous in both indoor and outdoor settings, spanning house
 
 Furthermore, accurately localizing waste objects is hindered by significant scale variations due to their diverse physical sizes and dynamic perspectives. The sheer volume of small objects exacerbates this challenge, making it difficult even for humans to precisely delineate their boundaries without zooming in for a closer look. Unlike robots, the human visual system possesses the ability to adjust attention across a wide or narrow visual field, enabling us to quickly grasp the scene's meaning and identify objects of interest. This capability allows us to focus on specific object regions for detailed examination and fine-grained delineation.
 
-<img src="https://github.com/dataset-ninja/mju-waste/assets/120389559/812e271a-9db5-42b3-a0a3-3c5068795cb2" alt="image" width="800">
+<img src="https://github.com/dataset-ninja/mju-waste/assets/120389559/0c18de64-5157-468f-b013-ac42415b0dab" alt="image" width="800">
 
 <span style="font-size: smaller; font-style: italic;">Example images from MJU-Waste and TACO datasets and their zoomed-in object regions. Detecting and localizing waste objects require both scene level and object level reasoning.</span>
 
