@@ -18,7 +18,7 @@ Furthermore, accurately localizing waste objects is hindered by significant scal
 
 Given an input color image and optionally an additional depth image, the authors model outputs a pixelwise labeling map. They apply deep models at both the scene and the object levels. 
 
-<img src="https://github.com/dataset-ninja/mju-waste/assets/120389559/b63c6ed2-df66-4b6b-9b08-bc9a41b89706" alt="image" width="800">
+<img src="https://github.com/dataset-ninja/mju-waste/assets/120389559/c4584072-33bf-43b6-b54d-668ded1a0b9b" alt="image" width="800">
 
 <span style="font-size: smaller; font-style: italic;">Overview of the proposed method. Given an input image, the authors approach the waste object segmentation problem at three levels: (i) scene-level parsing for an initial coarse segmentation, (ii) object-level parsing to recover fine details for each object region proposal, and (iii) pixel-level refinement based on color, depth, and spatial affinities. Together, joint inference at all these levels produces coherent final segmentation results.</span>
 
@@ -26,7 +26,7 @@ The dataset was curated by the authors through a process involving the collectio
 
 To organize the dataset, the authors partitioned the images randomly into three subsets: a training set, a validation set, and a test set, consisting of 1485, 248, and 742 images, respectively. However, due to inherent limitations of the sensor, the depth frames may contain missing values, particularly at reflective surfaces, occlusion boundaries, and distant regions. To address this, a median filter is employed to fill in these missing values, ensuring the depth images maintain high quality. Furthermore, each image within the MJU-Waste dataset is meticulously annotated with a pixelwise mask delineating the waste objects present.
 
-<img src="https://github.com/dataset-ninja/mju-waste/assets/120389559/21e85db0-cb68-48ae-b667-51b832383f34" alt="image" width="800">
+<img src="https://github.com/dataset-ninja/mju-waste/assets/120389559/46d01890-84bc-49a1-9d1b-da03b86aebc9" alt="image" width="800">
 
 <span style="font-size: smaller; font-style: italic;">Example color frames, ground-truth annotations, and depth frames from the MJU-Waste dataset. Ground-truth masks are shown in blue. Missing values in the raw depth frames are shown in white. These values are filled in with a median filter following.</span>
 
