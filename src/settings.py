@@ -93,7 +93,7 @@ ORGANIZATION_URL: Optional[Union[str, List[str]]] = [
 SLYTAGSPLIT: Optional[Dict[str, Union[List[str], str]]] = {
     "__POSTTEXT__": "Additionally, images are grouped by ***im_id***",
 }
-TAGS: Optional[List[str]] = None
+TAGS: Optional[List[str]] = ['multi-view']
 
 
 SECTION_EXPLORE_CUSTOM_DATASETS: Optional[List[str]] = None
