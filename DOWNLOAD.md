@@ -1,6 +1,6 @@
 Dataset **MJU-Waste** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://www.dropbox.com/scl/fi/klx6b1s7u5ydvbzacgpoz/mjuwaste-DatasetNinja.tar?rlkey=z6vdsd4zfr38k03462memyp8u&dl=1)
+ [Download](https://assets.supervisely.com/remote/eyJsaW5rIjogImZzOi8vYXNzZXRzLzM1NjBfTUpVLVdhc3RlL21qdXdhc3RlLURhdGFzZXROaW5qYS50YXIiLCAic2lnIjogInRqQzRZdVg5dmlGWmNsNHJqV0FQRnVmMDNqR1BJT3J6RE9EZDJPM2k4RTA9In0=)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
